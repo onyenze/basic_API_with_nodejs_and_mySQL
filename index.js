@@ -16,6 +16,7 @@ var mysqlConnection = mysql.createConnection({
     multipleStatements:true
 })
 
+// work is kinda slow and I am frustrated
 mysqlConnection.connect((err)=>{
     if(!err) console.log("DB connected Succesfully");
     else console.log(err.message);
